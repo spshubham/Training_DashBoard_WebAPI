@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-lg-12">
+        <span><h1 class="mat-h1">Trainers
+                <button id="add-btn"class="btn btn-dark float-right" (click)=openModal()>Add Trainer</button>
+             </h1>
+        </span>
+        
+    </div>
+</div>
+
+<div class="container" *ngFor="let t of trainers">
+    <div class="card flex-row flex-wrap">
+        <div class="card-header border-0">
+            <img src="https://png.pngtree.com/png-vector/20190321/ourmid/pngtree-vector-users-icon-png-image_856952.jpg" alt="">
+        </div>
+        <div class="card-block px-2">
+            <h1 class="card-title">{{t.trainer_name}}</h1>
+            <ul>
+                <li>Id - {{t.trainer_id}}</li>
+                <li>Email - {{t.trainer_email}}</li>
+                <li>Primary Skill - {{t.trainer_primary_skill}}</li>
+                <li>Certifications - {{t.trainer_certifications}}</li>
+                <li>Upgradation Plan - {{t.trainer_upgradation_plan}}</li>
+                <li>Timeline - {{t.trainer_timeline}}</li>
+            </ul>
+                        
+        </div>
+        <div class="right">
+            <button type="button" class="btn btn-primary">Edit</button>
+            <br>
+            <button type="button" class="btn btn-danger" (click)="delete_trainer(t.trainer_id)">Delete</button>
+          </div>
+        <div class="w-100"></div>
+        <div class="card-footer w-100 text-muted">
+            Ongoing Course- {{t.course_name}}
+        </div>
+    </div>
+    <br>
+</div>

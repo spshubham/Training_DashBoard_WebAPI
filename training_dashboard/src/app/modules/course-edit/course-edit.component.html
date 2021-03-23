@@ -1,0 +1,43 @@
+<p>course-edit works!</p>
+
+<div class="container">
+
+    <mat-form-field appearance="fill">
+        <mat-label>Enter Id</mat-label>
+        <input matInput type="text"  [(ngModel)]="id">
+    </mat-form-field>
+    <br>
+    
+    <mat-form-field appearance="fill">
+      <mat-label>Enter Name</mat-label>
+      <input matInput type="text"  [(ngModel)]="name">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Enter start_date</mat-label>
+        <input matInput type="text"  [(ngModel)]="start_date">
+    </mat-form-field>
+      <br>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Enter end_date</mat-label>
+        <input matInput type="text"  [(ngModel)]="end_date">
+    </mat-form-field>
+      <br>
+      <mat-form-field appearance="fill">
+        <mat-label>Enter enrollments</mat-label>
+        <input matInput type="text"  [(ngModel)]="enrollments">
+    </mat-form-field>
+      <br>
+      <mat-form-field appearance="fill">
+        <mat-label>Enter instructor</mat-label>
+        <input matInput type="text"  [(ngModel)]="instructor">
+    </mat-form-field>
+      <br>
+
+</div>
+
+<button mat-raised-button color="Warn" (click)="onCancel()">Cancel</button>&nbsp;
+
+<button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>

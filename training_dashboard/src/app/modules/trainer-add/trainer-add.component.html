@@ -1,0 +1,33 @@
+<span>Add Trainer Details</span><br><br>
+
+<div class="container">
+
+    <mat-form-field appearance="fill">
+        <mat-label>Enter Id</mat-label>
+        <input matInput type="text"  [(ngModel)]="trainer_id">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Enter Name</mat-label>
+      <input matInput type="text"  [(ngModel)]="trainer_name">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Enter Course Name</mat-label>
+        <input matInput type="text"  [(ngModel)]="course_name">
+    </mat-form-field>
+      <br>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Enter Email</mat-label>
+        <input matInput type="text"  [(ngModel)]="trainer_email">
+    </mat-form-field>
+      <br>
+
+</div>
+
+<button mat-raised-button color="Warn" (click)="onCancel()">Cancel</button>&nbsp;
+
+<button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>

@@ -1,0 +1,82 @@
+
+<h1 class="mat-h1">Overview</h1>
+<mat-divider></mat-divider>
+<br>
+
+<!-- Div for Overview Cards -->
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+    
+    <mat-card fxFlex="20">
+        <div class="text">
+            <h4 class="mat-h4">Ongoing Trainings</h4>
+        
+            <br> 
+            <span class="total">8</span>
+        </div>
+    </mat-card>
+
+    <mat-card fxFlex="20">
+        <div class="text">
+            <h4 class="mat-h4">New Registrations</h4>
+        
+            <br> 
+            <span class="total">50</span>
+        </div>
+    </mat-card>
+
+    <mat-card fxFlex="20">
+        <div class="text">
+            <h4 class="mat-h4">Active Users</h4>
+        
+            <br> 
+            <span class="total">210</span>
+        </div>
+    </mat-card>
+
+    <mat-card fxFlex="20">
+        <div class="text">
+            <h4 class="mat-h4">Idle Users</h4>
+        
+            <br> 
+            <span class="total">12</span>
+        </div>
+    </mat-card>
+    
+
+</div>
+
+<br>
+
+<mat-divider></mat-divider>
+
+<br>
+<h1 class="mat-h1"> Ongoing Trainings </h1>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+
+    <!-- Div for Bar Graph -->
+    <div fxFlex="60">
+        <app-bar [data]="barChart"></app-bar>
+    </div>
+    
+    <!-- Div for Pie Chart -->
+    <div fxFlex="40">
+        <app-widget-pie [data]="pieChart"></app-widget-pie>
+    </div>
+</div>
+
+<br>
+
+<mat-divider></mat-divider>
+
+<br>
+<h1 class="mat-h1"> Geo-Diversity of Users </h1>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+    <div fxFlex="100">
+        <app-donut [data]="donutChart"></app-donut>
+    </div>
+    
+</div>
+<mat-divider></mat-divider>
+<br>
+<br>
+<br>

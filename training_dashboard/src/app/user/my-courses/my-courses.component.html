@@ -1,0 +1,32 @@
+
+
+
+<h1 class="mat-h1">Courses Enrolled</h1>
+<div>
+    <table class="table">
+        <tr>
+            <!-- <th>Id</th> -->
+            <th>Course Name</th>
+            <th>Instructor</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <!-- <th class="enroll">No. of Enrollments</th> -->
+        </tr>
+
+        <tr *ngFor="let c of enrolledCourses">
+           <!--  <td>{{c.id}}</td> -->
+            <td><h4 class="mat-h4">{{c.name}}</h4></td>
+            <td>{{c.instructor}}</td>
+            <td>{{c.start_date}}</td>
+            <td>{{c.end_date}}</td>
+           <!--  <td class="enroll">{{c.enrollments}}</td> -->
+
+            <td><button class="btn btn-primary" routerLink="view" >Go to Course</button></td>
+            <!--<td><button class="btn btn-outline-danger">Delete</button></td> -->
+            
+        </tr>
+    </table>
+</div>
+
+
+

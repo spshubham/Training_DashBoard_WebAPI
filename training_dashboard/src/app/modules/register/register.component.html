@@ -1,0 +1,46 @@
+<span>Add User Details</span><br><br>
+ 
+<div class="container">     
+      <mat-form-field appearance="fill">
+        <mat-label>Enter Name</mat-label>
+        <input matInput type="text" placeholder="Name" [(ngModel)]="user_name">
+    </mat-form-field><br>
+   
+      <mat-form-field appearance="fill">
+        <mat-label>Enter Email</mat-label>
+        <input matInput type="text" placeholder="Email"  [(ngModel)]="user_email">
+    </mat-form-field>
+    <br> 
+    
+      <mat-form-field appearance="fill">
+        <mat-label>Enter Location</mat-label>
+        <input matInput type="text" placeholder="Location"  [(ngModel)]="location">
+            </mat-form-field>
+            <br>
+ 
+    
+            <mat-form-field appearance="fill">
+      <mat-label>Enter Password</mat-label>
+      <input matInput type="password" placeholder="Password" [(ngModel)]="password">
+    </mat-form-field>
+<br>
+ 
+<mat-form-field appearance="fill">
+  <mat-label>Repeat Password</mat-label>
+  <input matInput type="password" placeholder="Repeat Password" [(ngModel)]="repeat_password">
+</mat-form-field>
+<br>
+ 
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+<br>
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+<br>
+     
+<button type="button" class="cancelbtn" (click)="cancel()">Cancel</button>
+<button type="submit" class="signupbtn" (click)="signup()">Sign Up</button>
+     
+ 
+ 
+      </div>

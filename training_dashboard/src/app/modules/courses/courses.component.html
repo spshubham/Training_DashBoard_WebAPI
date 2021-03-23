@@ -1,0 +1,38 @@
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="mat-h1">Ongoing Trainings 
+            <button id="add-btn"class="btn btn-dark float-right" (click)="openModal()">Add Training</button>
+        </h1>
+    </div>
+</div>
+
+<mat-divider></mat-divider>
+
+<div>
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Course Name</th>
+            <th>Instructor</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th class="enroll">No. of Enrollments</th>
+        </tr>
+
+        <tr *ngFor="let c of Courses">
+            <td>{{c.id}}</td>
+            <td>{{c.name}}</td>
+            <td>{{c.instructor}}</td>
+            <td>{{c.start_date}}</td>
+            <td>{{c.end_date}}</td>
+            <td class="enroll">{{c.enrollments}}</td>
+
+            <td><button class="btn btn-primary" (click)="edit_course(c.id)">Edit</button></td>
+            <td><button class="btn btn-outline-danger" (click)="delete_course(c.id)">Delete</button></td>
+
+        </tr>
+    </table>
+</div>
+  
+  

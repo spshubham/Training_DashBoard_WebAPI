@@ -1,0 +1,19 @@
+How To run Application ?
+
+Steps:
+
+1. Go to Trainig_DashBoard_Api Project and Add Below Nuget packages.
+ - EntityFramework 
+ - Microsoft.AspNet.WebApi.Cors
+ - Newtonsoft json
+
+2. Go to training_dashboard and run below command
+ - npm install
+ - ng serve
+
+3. Create Database using script strored under DataBase_Script folder.
+
+4. Build and Run.
+
+
+	

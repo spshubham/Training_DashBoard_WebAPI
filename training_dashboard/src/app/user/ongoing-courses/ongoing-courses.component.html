@@ -1,0 +1,46 @@
+
+
+<!-- <div class="row">
+    <div class="column">
+            <div *ngFor= "let i of course" class="card" >
+                <img class="card-img-top" [src]="i.image" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="">{{i.name}}</a></h5>
+                    
+                    <ul class="card-text">
+                        <li><b>Instructor:</b> {{i.instructor}}</li>
+                        <li><b>Start Date:</b>  {{i.start_date}}</li>
+                        <li><b>End Date:</b>  {{i.end_date}}</li>
+                        <li><b>Students Enrolled:</b>  {{i.enrollments}}</li>
+                    </ul>
+                    
+                    <a href="#" class="btn btn-primary">Enroll</a>
+                </div>
+            </div>
+    </div>
+</div> -->
+
+<h1 class="mat-h1">Ongoing Trainings</h1>
+<mat-divider></mat-divider>
+
+<div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let i of course">
+      <mat-card class="mat-elevation-z4" >
+        <mat-card-header>
+          <mat-card-title class="title">{{i.name}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="i.image">
+        <mat-card-content>
+            <ul>
+                <li><b>Instructor:</b> {{i.instructor}}</li>
+                <li><b>Start Date:</b>  {{i.start_date}}</li>
+                <li><b>End Date:</b>  {{i.end_date}}</li>
+                <li><b>Students Enrolled:</b>  {{i.enrollments}}</li>
+            </ul>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="enroll(i.id)">Enroll</button> 
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
